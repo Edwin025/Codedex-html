@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>krusty krab</title>
+
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body{
+            background-color: rgb(10, 200, 162);
+        }
+
+        header{
+            background-color: bisque;
+            margin: 0px;
+            padding: 15px;
+            text-align: center;
+        }
+
+        main{
+            padding: 15px;
+        }
+
+        img{
+            width: 250px;
+        }
+
+        h3{
+            text-decoration: underline solid;
+            text-decoration-thickness: 2px;
+            margin: 15px;
+        }
+
+        section {
+            align-items: center;
+            text-align: center;
+        }
+
+        article {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        hr{
+            width: 80%;
+            margin: 10px auto;
+        }
+
+        li{
+            list-style: none;
+        }
+
+        .button{
+            padding: 5px 10px;
+            background-color: rgb(47, 98, 88);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        footer{
+            text-align: center;
+            padding: 10px;
+            background-color: rgb(47, 98, 88);
+        }
+
+
+    </style>
+
+</head>
+
+<body>
+    <header>
+
+        <img id="header-img" width="200px" src="https://m.media-amazon.com/images/I/61LLxBHfGSL.jpg"
+            alt="Krusty krab image">
+
+        <h1>Krusty Krab</h1>
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="#menu">
+                        <h2>Menu</h2>
+                    </a>
+                </li>
+                <li>
+                    <a href="#order-form">
+                        <h2>Order Form</h2>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+        <section id="menu">
+
+            <h2>Menu</h2>
+
+            <hr>
+
+            <article>
+                <img src="img/1.jpg" alt="burguer 1">
+                <h3>Burguer 1</h3>
+                <p>This burguer is the most popular in the community
+                    and is made with the freshest ingredients.
+                    only the best for our customers!
+                    watch out for the secret sauce!
+                    <br>
+                    <i>Price: $5.99</i>
+                </p>
+            </article>
+            <hr>
+            <article>
+                <img src="img/2.jpg" alt="burguer 2">
+                <h3>Burguer 2</h3>
+                <p>Ready to try our most recent creation?
+                    this new burguer is a must-try!
+                    made with a special blend of spices and sauces,
+                    what are you waiting for? bring your friends!
+                    <br>
+                    <i>Price: $7.00</i>
+                </p>
+            </article>
+            <hr>
+            <article>
+                <img src="img/3.jpg" alt="burguer 3">
+                <h3>Burguer 3</h3>
+                <p>This burguer is a classic!
+                    made with the finest ingredients and a secret recipe,
+                    never found anywhere else.
+                    you will love it! and at the best price!
+                    <br>
+                    <i>Price: $4.00</i>
+                </p>
+            </article>
+        </section>
+        <hr>
+        <section id="order-form">
+            <h2>Place your order</h2>
+            <hr>
+            <form action="#">
+                <label for="burguer-number">
+                    Burguer Number:
+                    <input type="number" min="0" max="3">
+                </label>
+
+                <br>
+
+                <label for="sides">
+                    Sides or add-ons:
+                    <input type="checkbox" name="sides">Onions
+                    <input type="checkbox" name="sides">Fries
+                    <input type="checkbox" name="sides">Extra cheese
+                </label>
+
+                <br>
+
+                <label for="special-instructions">
+                    Special Instructions:
+                    <textarea name="special-instructions" placeholder="Write here"></textarea>
+                </label>
+
+                <br><br>
+                <label for="checkout">
+                    <input class="button" type="submit" value="Go To Checkout">
+                </label>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Made with love by @Edwin008</p>
+    </footer>
+</body>
+
+</html>
